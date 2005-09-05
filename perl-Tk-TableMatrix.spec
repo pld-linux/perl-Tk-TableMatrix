@@ -30,6 +30,7 @@ displaying data in a table (or spreadsheet) format.
 
 %build
 %{__perl} Makefile.PL \
+	X11LIB=%{_prefix}/X11R6/%{_lib} \
 	INSTALLDIRS=vendor
 %{__make} \
 	OPTIMIZE="%{rpmcflags}"
@@ -48,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog Changes README
-%doc LICENSE pTk/license.terms
+%doc COPYING pTk/license.terms
 %{perl_vendorarch}/Tk/*.pm
 %dir %{perl_vendorarch}/Tk/TableMatrix
 %{perl_vendorarch}/Tk/TableMatrix/Spreadsheet.pm
