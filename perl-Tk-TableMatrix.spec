@@ -8,7 +8,7 @@
 Summary:	Tk::TableMatrix is a table/matrix widget extension to perl/tk.
 Name:		perl-Tk-TableMatrix
 Version:	1.2
-Release:	1
+Release:	2
 # TODO figure out license, i failed
 License:	?
 Group:		Development/Languages/Perl
