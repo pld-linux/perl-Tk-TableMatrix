@@ -5,7 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tk
 %define	pnam	TableMatrix
-Summary:	Tk::TableMatrix is a table/matrix widget extension to perl/tk.
+Summary:	Tk::TableMatrix is a table/matrix widget extension to Perl/Tk
+Summary(pl):	TK::TableMatrix to rozszerzenie dodaj±ce widget tabeli/macierzy do Perla/Tk
 Name:		perl-Tk-TableMatrix
 Version:	1.2
 Release:	2
@@ -14,16 +15,18 @@ License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	076a1660486806c73ad1b37ae5bbd82b
+BuildRequires:	perl-Tk
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-Tk
-%if %{with tests}
-%endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Tk::TableMatrix is a table/matrix widget extension to perl/tk for
+Tk::TableMatrix is a table/matrix widget extension to Perl/Tk for
 displaying data in a table (or spreadsheet) format.
+
+%description -l pl
+Tk::TableMatrix to rozszerzenie dodaj±ce widget tabeli/macierzy do
+Perla/Tk do wy¶wietlania danych w formacie tabeli lub arkusza.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -48,8 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog Changes README
-%doc COPYING pTk/license.terms
+%doc ChangeLog Changes README COPYING pTk/license.terms
 %{perl_vendorarch}/Tk/*.pm
 %dir %{perl_vendorarch}/Tk/TableMatrix
 %{perl_vendorarch}/Tk/TableMatrix/Spreadsheet.pm
