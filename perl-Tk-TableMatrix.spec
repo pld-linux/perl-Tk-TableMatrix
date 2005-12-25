@@ -15,7 +15,7 @@ License:	GPL v1+ or Artistic / distributable (pTK library)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	076a1660486806c73ad1b37ae5bbd82b
-BuildRequires:	perl-Tk
+BuildRequires:	perl-Tk-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/auto/Tk/TableMatrix/autosplit.ix
 %attr(755,root,root) %{perl_vendorarch}/auto/Tk/TableMatrix/*.so
 %{_mandir}/man3/*
-# to -devel?
+# to -devel? rm -rf as already in perl-Tk?
 #%{perl_vendorarch}/Tk/pTk/mm.h
 #%{perl_vendorarch}/Tk/pTk/tkTable.h
 #%{perl_vendorarch}/Tk/pTk/tkTableversion.h
