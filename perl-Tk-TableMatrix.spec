@@ -8,13 +8,13 @@
 Summary:	Tk::TableMatrix is a table/matrix widget extension to Perl/Tk
 Summary(pl):	TK::TableMatrix to rozszerzenie dodaj±ce widget tabeli/macierzy do Perla/Tk
 Name:		perl-Tk-TableMatrix
-Version:	1.2
-Release:	2
+Version:	1.22
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic / distributable (pTK library)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	076a1660486806c73ad1b37ae5bbd82b
+# Source0-md5:	e1d858c0a01847fe2f04271d98918146
 BuildRequires:	perl-Tk-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
