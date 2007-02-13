@@ -6,7 +6,7 @@
 %define	pdir	Tk
 %define	pnam	TableMatrix
 Summary:	Tk::TableMatrix is a table/matrix widget extension to Perl/Tk
-Summary(pl.UTF-8):   TK::TableMatrix to rozszerzenie dodające widget tabeli/macierzy do Perla/Tk
+Summary(pl.UTF-8):	TK::TableMatrix to rozszerzenie dodające widget tabeli/macierzy do Perla/Tk
 Name:		perl-Tk-TableMatrix
 Version:	1.22
 Release:	1
