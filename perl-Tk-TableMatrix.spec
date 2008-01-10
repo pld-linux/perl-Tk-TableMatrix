@@ -36,6 +36,7 @@ Perla/Tk do wyświetlania danych w formacie tabeli lub arkusza.
 	X11LIB=%{_prefix}/X11R6/%{_lib} \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
