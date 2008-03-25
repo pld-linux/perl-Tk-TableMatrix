@@ -3,18 +3,19 @@
 %bcond_without	tests		# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Tk
-%define	pnam	TableMatrix
-Summary:	Tk::TableMatrix is a table/matrix widget extension to Perl/Tk
-Summary(pl.UTF-8):	TK::TableMatrix to rozszerzenie dodające widget tabeli/macierzy do Perla/Tk
+%define		pdir	Tk
+%define		pnam	TableMatrix
+Summary:	Tk::TableMatrix - a table/matrix widget extension to Perl/Tk
+Summary(pl.UTF-8):	TK::TableMatrix - rozszerzenie dodające widget tabeli/macierzy do Perla/Tk
 Name:		perl-Tk-TableMatrix
 Version:	1.22
 Release:	2
 # same as perl
 License:	GPL v1+ or Artistic / distributable (pTK library)
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Tk/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e1d858c0a01847fe2f04271d98918146
+URL:		http://search.cpan.org/dist/Tk-TableMatrix/
 BuildRequires:	perl-Tk-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
