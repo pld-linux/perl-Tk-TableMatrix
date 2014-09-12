@@ -59,7 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Tk/TableMatrix/Spreadsheet.pm
 %{perl_vendorarch}/Tk/TableMatrix/SpreadsheetHideRows.pm
 %dir %{perl_vendorarch}/auto/Tk/TableMatrix
-%{perl_vendorarch}/auto/Tk/TableMatrix/*.bs
 %{perl_vendorarch}/auto/Tk/TableMatrix/autosplit.ix
 %attr(755,root,root) %{perl_vendorarch}/auto/Tk/TableMatrix/*.so
 %{_mandir}/man3/*
