@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Tk
 %define		pnam	TableMatrix
 Summary:	Tk::TableMatrix - a table/matrix widget extension to Perl/Tk
