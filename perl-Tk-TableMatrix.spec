@@ -8,7 +8,7 @@ Summary:	Tk::TableMatrix - a table/matrix widget extension to Perl/Tk
 Summary(pl.UTF-8):	TK::TableMatrix - rozszerzenie dodające widget tabeli/macierzy do Perla/Tk
 Name:		perl-Tk-TableMatrix
 Version:	1.23
-Release:	13
+Release:	14
 # same as perl
 License:	GPL v1+ or Artistic / distributable (pTK library)
 Group:		Development/Languages/Perl
